@@ -2,7 +2,7 @@ const {resolve} = require('path');
 const webpack = require('webpack');
 
 const basePath = resolve(__dirname, '..')
-console.log(basePath)
+
 module.exports = {
   entry: './src/client/index.tsx',
   output: {
@@ -31,6 +31,20 @@ module.exports = {
     hints: false
   },
   devtool: 'eval-source-map',
+  devServer: {
+    contentBase: [resolve(basePath, 'build'), resolve(basePath, 'views')],
+    compress: true,
+    port: 3000,
+    publicPath: '/build'
+  },
   target: 'web',
-  stats: 'normal'
+  stats: 'normal',
+  plugins: [
+    new webpack.LoaderOptionsPlugin({
+      minimize: true,
+      debug: false
+    }),
+    new webpack.DefinePlugin({"process.env": {NODE_ENV: "'production'"}}),
+    new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}})
+  ]
 }
