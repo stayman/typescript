@@ -1,6 +1,5 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
-import debounce from 'lodash.debounce';
 const importStyles = require('./styles.css');
 
 export interface SearchProps {

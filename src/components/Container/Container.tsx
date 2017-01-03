@@ -1,7 +1,7 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
 import SearchBox from 'components/Search/Search';
-import {MovieAttrs} from 'components/Movie';
+import Movie, {MovieAttrs} from 'components/Movie/Movie';
 import search from 'services/search';
 const importStyles = require('./styles.css');
 
@@ -33,10 +33,10 @@ class Movies extends React.Component<{}, MovieContainerState> {
 
   render() {
     const {results} = this.state;
-    let body: JSX.Element;
+    let body: JSX.Element | Array<JSX.Element>;
 
     if (results.length) {
-      body = <div />;
+      body = results.map(movie => <Movie {...movie} />);
     } else {
       body = <h2 styleName="empty">Search for a Movie to get started</h2>;
     }

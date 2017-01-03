@@ -1,0 +1,14 @@
+.root {
+  max-width: 33%;
+  text-align: center;
+}
+
+.title {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+
+.poster {
+}
