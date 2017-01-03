@@ -23,11 +23,11 @@ class Movies extends React.Component<undefined, MovieContainerState> {
     if (results.length) {
       body = <div />;
     } else {
-      body = <h1 styleName="root">Search for a Movie to get started</h1>;
+      body = <h1>Search for a Movie to get started</h1>;
     }
 
     return (
-      <div>
+      <div styleName="root">
         {body}
       </div>
     )
