@@ -19,10 +19,26 @@
   "homepage": "https://github.com/stayman/typescript#readme",
   "devDependencies": {
     "@types/axios": "^0.9.34",
+    "@types/node": "^6.0.55",
     "@types/react": "^0.14.55",
+    "@types/react-css-modules": "^3.7.5",
     "@types/react-dom": "^0.14.20",
+    "autoprefixer": "^6.6.0",
     "awesome-typescript-loader": "^3.0.0-beta.17",
+    "css-loader": "^0.26.1",
+    "postcss": "^5.2.8",
+    "postcss-color-function": "^2.0.1",
+    "postcss-comment": "^1.0.3",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-import": "^9.0.0",
+    "postcss-inline-svg": "^2.3.0",
+    "postcss-loader": "^1.2.1",
+    "postcss-mixins": "^5.4.1",
+    "postcss-nested": "^1.0.0",
+    "postcss-property-lookup": "^1.2.1",
+    "postcss-simple-vars": "^3.0.0",
     "source-map-loader": "^0.1.5",
+    "style-loader": "^0.13.1",
     "typescript": "^2.1.4",
     "webpack": "^2.2.0-rc.3",
     "webpack-dev-server": "^2.2.0-rc.0"
@@ -30,6 +46,7 @@
   "dependencies": {
     "axios": "^0.15.3",
     "react": "^15.4.1",
+    "react-css-modules": "^4.1.0",
     "react-dom": "^15.4.1"
   }
 }
