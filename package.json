@@ -19,7 +19,10 @@
   "homepage": "https://github.com/stayman/typescript#readme",
   "devDependencies": {
     "@types/axios": "^0.9.34",
+    "@types/es6-promise": "0.0.32",
+    "@types/lodash.debounce": "^4.0.0",
     "@types/node": "^6.0.55",
+    "@types/qs": "^6.2.30",
     "@types/react": "^0.14.55",
     "@types/react-css-modules": "^3.7.5",
     "@types/react-dom": "^0.14.20",
@@ -45,6 +48,8 @@
   },
   "dependencies": {
     "axios": "^0.15.3",
+    "lodash.debounce": "^4.0.8",
+    "qs": "^6.3.0",
     "react": "^15.4.1",
     "react-css-modules": "^4.1.0",
     "react-dom": "^15.4.1"

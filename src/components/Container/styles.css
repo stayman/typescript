@@ -1,3 +1,14 @@
 .root {
-  margin-left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  flex: 1 100%;
+  text-align: center;
+}
+
+.empty {
+  flex: 2 100%;
+  text-align: center;
 }
